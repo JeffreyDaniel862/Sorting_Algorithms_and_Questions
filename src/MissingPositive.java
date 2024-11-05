@@ -7,7 +7,7 @@ public class MissingPositive {
         int i = 0;
         while (i < nums.length) {
             int correctIndex = nums[i] - 1;
-            if (nums[i] < nums.length && nums[i] > 0 && nums[i] != nums[correctIndex]) {
+            if (nums[i] <= nums.length && nums[i] > 0 && nums[i] != nums[correctIndex]) {
                 Helpers.swap(nums, i, correctIndex);
             } else {
                 i++;
